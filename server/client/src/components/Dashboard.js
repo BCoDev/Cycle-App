@@ -1,11 +1,16 @@
 import React from "react";
-import TypeAhead from "./TypeAheadForm.js";
+import TypeAheadForm from "./TypeAheadForm.js";
 
 const Dashboard = () => {
+
+    const createBike = (selected) => {
+        console.log(`${selected.brand }, ${selected.model}`)
+    }
+
     return (
         <div style={{ textAlign: "center" }}>
             <h1>Dashboard</h1>
-             <TypeAhead />
+             <TypeAheadForm onCreate={createBike} />
 
         </div>
     )
