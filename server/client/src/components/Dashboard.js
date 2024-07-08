@@ -15,7 +15,6 @@ const Dashboard = () => {
             <h1>Dashboard</h1>
             <BikeList bikes={bikes} />
             <TypeAheadForm onCreate={createBike} />
-
         </div>
     )
 }

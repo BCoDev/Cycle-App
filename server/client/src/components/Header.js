@@ -20,15 +20,17 @@ class Header extends Component {
     render() {
         return (
             <div>
-            <Navbar bg="dark" data-bs-theme="dark">
+            <Navbar bg="dark" data-bs-theme="dark" id="Navbar-border">
                 <Container>
                     <Nav> 
                         <Navbar.Brand>
                             <Link to={this.props.auth ? '/landing' : '/'}>
-                                Logo 
+                                Cycle-Lyft 
                             </Link>
                         </Navbar.Brand>
-                        <Nav.Link href="/dashboard" className="ms-auto justify-content-end">
+                    </Nav>
+                    <Nav>
+                        <Nav.Link href="/dashboard">
                             {this.renderContent()}
                         </Nav.Link>
                     </Nav>

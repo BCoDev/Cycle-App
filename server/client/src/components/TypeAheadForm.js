@@ -17,10 +17,12 @@ const TypeAheadForm = ({ onCreate }) => {
 
     return (
         <div>
-            <h4>Submit Bikes</h4>
             <Form onSubmit={ handleSubmit }>
-                <Form.Group className="mb-3"><Form.Label>Add Bike</Form.Label></Form.Group>
+                <Form.Group className="mb-3">
+                    <Form.Label>Add Bikes:</Form.Label>
+                </Form.Group>
                 <Typeahead id='typeahead-brand'
+                    placeholder="Add Brand"
                     onChange={(selection) => {
                         setSelected({ ...selected, ...{ brand: selection[0] }});
                       }}
@@ -29,6 +31,7 @@ const TypeAheadForm = ({ onCreate }) => {
                     selected = {[selected.brand]} 
                 />
                 <Typeahead id='typeahead-model'
+                    placeholder="Add Model"
                     onChange={(selection) => {
                         setSelected({ ...selected, ...{ model: selection[0] }});
                       }}
