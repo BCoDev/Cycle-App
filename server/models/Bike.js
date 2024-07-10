@@ -2,7 +2,9 @@ const mongoose = require('mongoose')
 const { Schema } = mongoose
 
 const bikeSchema = new Schema({
-    bikeId: String
+    Id: String, 
+    brand: String, 
+    model: String
 })
 
-mongoose.model('bikes', bikeSchema)
+mongoose.model('bike', bikeSchema)
