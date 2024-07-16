@@ -24,7 +24,7 @@ class Header extends Component {
                 <Container>
                     <Nav> 
                         <Navbar.Brand>
-                            <Link to={this.props.auth ? '/landing' : '/'}>
+                            <Link to={!this.props.auth ? '/landing' : '/dashboard'}>
                                 Cycle-Lyft 
                             </Link>
                         </Navbar.Brand>
