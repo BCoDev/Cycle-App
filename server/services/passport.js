@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const keys = require('../config/keys')
 
 const User =  mongoose.model('users')
+const Bike = mongoose.model('bikes')
 
 passport.serializeUser((user, done) =>{
     done(null, user.id)
