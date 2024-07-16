@@ -6,4 +6,4 @@ const bikeSchema = new Schema({
     model: String
 })
 
-mongoose.model('bike', bikeSchema)
+mongoose.model('bikes', bikeSchema)

@@ -2,7 +2,7 @@ const { default: axios } = require("axios")
 
 const options = {
     method: 'GET',
-    url: 'https://bikeindex.org/bikes/{bike_id}',
+    url: '',
     headers: {'content-type': 'application/json', authorization: 'Bearer ACCESS_TOKEN'}
 }
   

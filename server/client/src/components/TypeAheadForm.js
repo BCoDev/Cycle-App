@@ -49,7 +49,7 @@ const TypeAheadForm = ({ onCreate }) => {
                     selected = {[selected.model]} 
                 />
 
-                <Button variant="primary" type="submit">Click to add</Button>
+                <Button variant="info" type="submit">Click to add</Button>
 
             </Form>
         </div>
