@@ -21,4 +21,8 @@ a {
 #Navbar-border {
     border-radius: 5px;
 }
+#map { 
+    height: 180px; 
+    width: 95vw;
+}
 
