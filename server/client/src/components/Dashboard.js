@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Map from "./Map.js";
 import TypeAheadForm from "./TypeAheadForm.js";
 import BikeList from "./BikeList.js";
 
@@ -16,7 +15,6 @@ const Dashboard = () => {
             <h1>Dashboard</h1>
             <BikeList bikes={bikes} />
             <TypeAheadForm onCreate={createBike} />
-            <Map />
         </div>
     )
 }

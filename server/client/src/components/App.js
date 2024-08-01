@@ -8,6 +8,7 @@ import '../App.css'
 import Header from './Header'
 import Landing from './Landing'
 import Dashboard from './Dashboard'
+import Map from "./Map"
 import SignUp from "./SignUp"
 
 
@@ -24,6 +25,7 @@ class App extends Component {
                         <Header />
                         <Route exact path="/landing" component={Landing} />
                         <Route exact path="/dashboard" component={Dashboard} />
+                        <Route exact path="/map" component={Map} />
                         <Route exact path="/signup" component={SignUp} />
                     </div>
                 </BrowserRouter>

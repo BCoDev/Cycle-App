@@ -28,6 +28,10 @@ class Header extends Component {
                                 Cycle-Lyft 
                             </Link>
                         </Navbar.Brand>
+                        <Nav.Link href="/add-bikes">
+                            Add Bikes
+                        </Nav.Link>
+
                     </Nav>
                     <Nav>
                         <Nav.Link href="/dashboard">
