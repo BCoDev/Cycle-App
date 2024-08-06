@@ -1,21 +1,20 @@
-import React, { useState } from "react";
-import TypeAheadForm from "./TypeAheadForm.js";
-import BikeList from "./BikeList.js";
+import React, { useRef } from "react"
+import { MapContainer, TileLayer } from "react-leaflet"
+import 'leaflet/dist/leaflet.css'
+import '../App.css'
 
 const Dashboard = () => {
-    const [bikes, setBikes] = useState([])
-
-    const createBike = ({ brand, model }) => {
-        const updatedBikes = [...bikes, { id: Math.round(Math.random() * 9999), brand, model }]
-        setBikes(updatedBikes)
-    }
+    const mapRef = useRef(null);
+    const latitude = 51.505;
+    const longitude = -0.09;
 
     return (
-        <div style={{ textAlign: "center" }}>
-            <h1>Dashboard</h1>
-            <BikeList bikes={bikes} />
-            <TypeAheadForm onCreate={createBike} />
-        </div>
+        <MapContainer center={[latitude, longitude]} zoom={13} ref={mapRef} id="map">
+            <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+        </MapContainer>
     )
 }
 

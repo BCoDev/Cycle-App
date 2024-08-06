@@ -31,7 +31,6 @@ class Header extends Component {
                         <Nav.Link href="/add-bikes">
                             Add Bikes
                         </Nav.Link>
-
                     </Nav>
                     <Nav>
                         <Nav.Link href="/dashboard">
