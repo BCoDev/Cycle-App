@@ -11,7 +11,7 @@ class Header extends Component {
             case null:
                 return 'Still deciding'
             case false: 
-                return <li><a href="/auth/google">Login</a></li>
+                return <li><Link to="/signup">Sign Up</Link></li> && <li><a href="/auth/google">Login</a></li>
             default:
                 return <li><a href="/api/logout">Logout</a></li>
         }
@@ -28,11 +28,12 @@ class Header extends Component {
                                 Cycle-Lyft 
                             </Link>
                         </Navbar.Brand>
-                        <Nav.Link href="/add-bikes">
+                        <Nav.Link href="/addbikes">
                             Add Bikes
                         </Nav.Link>
                     </Nav>
                     <Nav>
+                        <Nav.Link href="/signup">Sign up</Nav.Link>
                         <Nav.Link href="/dashboard">
                             {this.renderContent()}
                         </Nav.Link>
@@ -49,5 +50,3 @@ function mapStateToProps({auth}) {
 }
 
 export default connect(mapStateToProps)(Header)
-
-// <Nav.Link href="/signup">Sign up</Nav.Link>

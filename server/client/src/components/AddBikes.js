@@ -12,7 +12,6 @@ function AddBikes() {
 
     return (
         <div style={{ textAlign: "center" }}>
-            <h1>Add Bikes</h1>
             <BikeList bikes={bikes} />
             <TypeAheadForm onCreate={createBike} />
         </div>

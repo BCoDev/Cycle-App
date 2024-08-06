@@ -9,6 +9,7 @@ import Header from './Header'
 import Landing from './Landing'
 import Dashboard from './Dashboard'
 import SignUp from "./SignUp"
+import AddBikes from "./AddBikes";
 class App extends Component {
     componentDidMount() {
         this.props.fetchUser()
@@ -23,6 +24,7 @@ class App extends Component {
                         <Route exact path="/landing" component={Landing} />
                         <Route exact path="/dashboard" component={Dashboard} />
                         <Route exact path="/signup" component={SignUp} />
+                        <Route exact path="/addbikes" component={AddBikes} />
                     </div>
                 </BrowserRouter>
             </div>
