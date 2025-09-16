@@ -8,4 +8,4 @@ function BikeList({ bikes }) {
     return <div>{ renderedBikes }</div>
 }
 
-export default BikeList
+export default BikeList 

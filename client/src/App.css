@@ -19,10 +19,15 @@ a {
     text-decoration: none;
 }
 #Navbar-border {
+    width: 70vw;
     border-radius: 5px;
+    top: 20px;
+    z-index: 10;
+    position: relative;
 }
 #map { 
-    height: 250px; 
+    height: 80vw; 
     width: 92vw;
+    z-index: 1;
 }
 
